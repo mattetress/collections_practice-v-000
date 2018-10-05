@@ -22,3 +22,13 @@ end
 def reverse_array(array)
   array.reverse
 end
+
+def kesha_maker(array)
+  kesha = []
+  array.each do |item|
+    split = item.split("")
+    split[2] = "$"
+    kesha << split.join("")
+  end
+  kesha
+end
